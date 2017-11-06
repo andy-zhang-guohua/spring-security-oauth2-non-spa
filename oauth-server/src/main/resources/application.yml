@@ -1,0 +1,24 @@
+server:
+    port: 9299 #当前服务节点端口
+    contextPath: /uaa
+
+spring:
+  application:
+    name: admin-oauth #当前应用的名称
+
+  ################### DataSource Configuration ##########################
+  datasource :
+    driver-class-name : com.mysql.jdbc.Driver
+    url : jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
+    username : root
+    password : Passw0rd
+
+  jpa :
+    properties:
+      hibernate.hbm2ddl.auto : update
+
+logging:
+  level:
+    org: DEBUG
+    andy.backyard : DEBUG
+
